@@ -18,6 +18,7 @@ void main_01() {
     home: Scaffold(
       //* The "appBar" property sets the top bar of the app
       //* It could simply take an "AppBar" widget
+      //! You should add a comma (,) after the last property for better-looking formatting
       appBar: AppBar(
         title: const Text("First Flutter App"),
         backgroundColor: Colors.brown[700],
