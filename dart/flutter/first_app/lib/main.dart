@@ -1,3 +1,4 @@
+import 'package:first_app/columns.dart';
 import 'package:flutter/material.dart';
 
 //* To use a widget from another file, import it at the top of the file
@@ -85,8 +86,15 @@ class Home extends StatelessWidget {
 }
 
 //^ Imported widget as the main widget
-void main() {
+void main_03() {
   runApp(const MaterialApp(
     home: ImportExample(),
+  ));
+}
+
+//^ "Column" widget
+void main() {
+  runApp(const MaterialApp(
+    home: Columns(),
   ));
 }
