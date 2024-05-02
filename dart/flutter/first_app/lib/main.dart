@@ -53,6 +53,29 @@ class Home extends StatelessWidget {
   //* The "build" method enables "Hot Reload", which rebuilds the widget when it changes
   Widget build(BuildContext context) {
     //* Just replace the return value with the widget you want to display
-    return const Text("This widget supports \"Hot Reload\"");
+    // return const Text("This widget supports \"Hot Reload\"");
+    //* You could also wrap your widget with a "Container"
+    //* This allows you to add padding, margin, color, etc.
+    //! The widget takes all the available space when no child is provided
+    //* But when a child is provided, it takes the size of the child, it's still modifiable though
+    return Container(
+      color: Colors.orange,
+      padding: const EdgeInsets.all(20),
+      margin: const EdgeInsets.fromLTRB(100, 30, 0, 0),
+      // height: 150,
+      // width: 150,
+      //* The "child" property sets the widget that will be displayed inside the container
+      //* The "Text" widget can take a "style" property to give to its content
+      child: const Text("Container interior", style: TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontStyle: FontStyle.italic,
+        letterSpacing: 3,
+        decoration: TextDecoration.underline,
+        decorationColor: Colors.white,
+      )),
+    );
+    //* The widgets can take different properties to modify their appearance
+    //! Some require a special class with specific fields or methods
   }
 }
