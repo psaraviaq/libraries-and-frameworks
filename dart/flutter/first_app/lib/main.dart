@@ -77,5 +77,6 @@ class Home extends StatelessWidget {
     );
     //* The widgets can take different properties to modify their appearance
     //! Some require a special class with specific fields or methods
+    //* You can always hover over a property to see its type and required fields
   }
 }
