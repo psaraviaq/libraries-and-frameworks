@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+//* To use a widget from another file, import it at the top of the file
+import 'package:first_app/import_example.dart';
+
 //^ Basic "Hello World" app
 void main_00() {
   //* Call the "runApp" function to run the app, you can pass a widget like "MaterialApp"
@@ -31,7 +34,7 @@ void main_01() {
 }
 
 //^ An app with a stateless widget
-void main() {
+void main_02() {
   runApp(MaterialApp(
     home: Scaffold(
       appBar: AppBar(
@@ -79,4 +82,11 @@ class Home extends StatelessWidget {
     //! Some require a special class with specific fields or methods
     //* You can always hover over a property to see its type and required fields
   }
+}
+
+//^ Imported widget as the main widget
+void main() {
+  runApp(const MaterialApp(
+    home: ImportExample(),
+  ));
 }
