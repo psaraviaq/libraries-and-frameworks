@@ -1,4 +1,5 @@
-import 'package:first_app/columns.dart';
+// import 'package:first_app/columns.dart';
+import 'package:first_app/rows.dart';
 import 'package:flutter/material.dart';
 
 //* To use a widget from another file, import it at the top of the file
@@ -92,9 +93,10 @@ void main_03() {
   ));
 }
 
-//^ "Column" widget
+//^ "Column" and "Row" widgets
 void main() {
   runApp(const MaterialApp(
-    home: Columns(),
+    // home: Columns(),
+    home: Rows(),
   ));
 }
