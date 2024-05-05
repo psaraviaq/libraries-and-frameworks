@@ -1,4 +1,5 @@
 // import 'package:first_app/columns.dart';
+import 'package:first_app/images.dart';
 import 'package:first_app/rows.dart';
 import 'package:flutter/material.dart';
 
@@ -94,9 +95,16 @@ void main_03() {
 }
 
 //^ "Column" and "Row" widgets
-void main() {
+void main_04() {
   runApp(const MaterialApp(
     // home: Columns(),
     home: Rows(),
+  ));
+}
+
+//^ Images
+void main() {
+  runApp(const MaterialApp(
+    home: Images(),
   ));
 }
