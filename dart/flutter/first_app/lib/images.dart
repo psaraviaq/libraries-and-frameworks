@@ -15,7 +15,7 @@ class Images extends StatelessWidget {
       body: Column(
         children: [
           //* The "Image" widget is used to display images
-          //* The "asset" constructor is used to load images from the assets folder
+          //* The "asset" constructor is used to load local images
           Image.asset("assets/img/night.jpg"),
           //* The "network" constructor is used to load images from the internet
           Image.network("https://sugarspunrun.com/wp-content/uploads/2023/03/Easy-mac-and-cheese-recipe-1-of-1-300x300.jpg"),
