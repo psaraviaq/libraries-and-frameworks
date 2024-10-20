@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { User } from "../../types/User";
 
 const useFetchingData = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<User[]>([]);
 
   //* "useEffect" is a hook that allows you to perform side effects in function components
   useEffect(() => {
