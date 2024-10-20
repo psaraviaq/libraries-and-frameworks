@@ -1,6 +1,7 @@
 import "./App.css";
 import Counter from "./Components/Counter/Counter";
 import MyComponent from "./Components/MyComponent/MyComponent";
+import FetchingData from "./Components/FetchingData/FetchingData";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <MyComponent />
 
       <Counter />
+
+      <FetchingData />
     </>
   );
 }
