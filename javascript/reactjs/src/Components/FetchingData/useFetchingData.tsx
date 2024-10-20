@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { User } from "../../types/User";
+import { getUsers } from "../../services/userService";
 
 const useFetchingData = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -7,8 +8,7 @@ const useFetchingData = () => {
   //* "useEffect" is a hook that allows you to perform side effects in function components
   useEffect(() => {
     //* This code will only run once after the initial render
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
+    getUsers()
       .then((data) => setUsers(data))
       .catch((err) => console.error(err));
 
