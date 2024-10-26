@@ -15,6 +15,8 @@ const useCounter = () => {
   const decrement = () => {
     //* Or you can pass a function that receives the previous state
     setCount((prev) => prev - 1);
+    //! But it won't update the state until the next render
+    console.log(count);
   };
 
   const reset = () => {
