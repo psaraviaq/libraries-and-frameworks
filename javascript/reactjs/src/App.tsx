@@ -1,5 +1,5 @@
 import "./App.css";
-import Counter from "./Components/Counter/Counter";
+import Counter from "./useState/Counter/Counter";
 import MyComponent from "./Components/MyComponent/MyComponent";
 import FetchingData from "./Components/FetchingData/FetchingData";
 
