@@ -10,6 +10,9 @@ import "./index.css";
 //* Alt + I: Emmet Balance Inward
 //* Alt + A: Emmet Wrap with Abbreviation
 
+//* Ctrl + I: Copilot Inline Chat
+//* Ctrl + Enter: Accept Copilot Suggestion
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <App />
