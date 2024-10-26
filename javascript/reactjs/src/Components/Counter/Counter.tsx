@@ -4,6 +4,7 @@ const Counter = () => {
   //* Destructure the values and functions from the custom hook
   const { count, increment, decrement, reset } = useCounter();
 
+  //* In JSX (or TSX), you put code inside curly braces {}
   return (
     <div>
       <p>{count}</p>
