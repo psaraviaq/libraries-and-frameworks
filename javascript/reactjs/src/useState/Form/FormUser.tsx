@@ -1,7 +1,7 @@
 import useFormUser from "./useFormUser";
 
 const FormUser = () => {
-  const { email, password, handleInputChange } = useFormUser();
+  const { email, password, conditions, handleInputChange } = useFormUser();
 
   return (
     <>
@@ -25,6 +25,16 @@ const FormUser = () => {
           value={password}
           onChange={handleInputChange}
         />
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="conditions"
+          id="conditions"
+          checked={conditions}
+          onChange={handleInputChange}
+        />
+        <label htmlFor="conditions">Accept conditions</label>
       </div>
     </>
   );
