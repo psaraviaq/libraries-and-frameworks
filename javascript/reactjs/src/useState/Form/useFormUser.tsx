@@ -7,6 +7,7 @@ let initialUser: User = {
 };
 
 const useFormUser = () => {
+  //? Initializer function
   const [user, setUser] = useState<User>(initialUser);
 
   const { email, password } = user;
