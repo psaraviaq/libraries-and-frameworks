@@ -1,4 +1,4 @@
-import { User } from "../types/User";
+import { User } from "./User";
 
 //* Use a function to isolate the fetch call of the API
 export const getUsers = async (): Promise<User[]> => {
@@ -10,6 +10,6 @@ export const getUsers = async (): Promise<User[]> => {
     const data: User[] = await response.json();
     return data;
   } catch (err) {
-    throw new Error(err);
+    throw new Error("Something went wrong");
   }
 };

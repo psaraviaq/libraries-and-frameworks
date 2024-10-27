@@ -1,4 +1,5 @@
 import useFetchingData from "./useFetchingData";
+import UserList from "./UserList";
 
 const FetchingData = () => {
   //! Even though we're only importing variables,
@@ -11,7 +12,7 @@ const FetchingData = () => {
 
       <ul>
         {users?.map((user) => (
-          <li key={user.id}>{user.name}</li>
+          <UserList key={user.id} name={user.name} />
         ))}
       </ul>
     </div>
