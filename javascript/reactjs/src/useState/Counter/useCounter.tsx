@@ -10,13 +10,16 @@ const useCounter = () => {
   const increment = () => {
     //* You can either pass a value
     setCount(count + 1);
+    //! However if you pass multiple of them, only the last one will be used
+    // setCount(count + 1);
   };
 
   const decrement = () => {
     //* Or you can pass a function that receives the previous state
+    //~ If you pass functions like this, a queue of them is created
     setCount((prev) => prev - 1);
     //! But it won't update the state until the next render
-    console.log(count);
+    // console.log(count);
   };
 
   const reset = () => {
