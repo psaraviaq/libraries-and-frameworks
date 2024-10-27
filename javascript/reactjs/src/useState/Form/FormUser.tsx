@@ -5,8 +5,7 @@ const FormUser = () => {
 
   return (
     <>
-      <h3>Form User</h3>
-
+      <p>Form User</p>
       <div>
         <label htmlFor="email">Email</label>
         <input
@@ -16,7 +15,8 @@ const FormUser = () => {
           value={email}
           onChange={handleInputChange}
         />
-
+      </div>
+      <div>
         <label htmlFor="password">Password</label>
         <input
           type="password"

@@ -1,6 +1,7 @@
 import "./App.css";
-import Counter from "./useState/Counter/Counter";
 import MyComponent from "./Components/MyComponent/MyComponent";
+import Counter from "./useState/Counter/Counter";
+import FormUser from "./useState/Form/FormUser";
 import FetchingData from "./Components/FetchingData/FetchingData";
 
 function App() {
@@ -9,7 +10,11 @@ function App() {
       {/** Importing MyComponent */}
       <MyComponent />
 
-      <Counter />
+      <h2>useState</h2>
+      <div>
+        <Counter />
+        <FormUser />
+      </div>
 
       <FetchingData />
     </>

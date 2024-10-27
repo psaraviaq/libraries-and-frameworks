@@ -6,13 +6,13 @@ const Counter = () => {
 
   //* In JSX (or TSX), you put code inside curly braces {}
   return (
-    <div>
+    <>
       <p>{count}</p>
 
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
       <button onClick={reset}>Reset</button>
-    </div>
+    </>
   );
 };
 
