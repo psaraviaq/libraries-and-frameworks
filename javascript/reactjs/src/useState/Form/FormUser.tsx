@@ -9,7 +9,7 @@ const FormUser = () => {
       <div>
         <label htmlFor="email">Email</label>
         <input
-          type="text"
+          type="email"
           name="email"
           id="email"
           value={email}
