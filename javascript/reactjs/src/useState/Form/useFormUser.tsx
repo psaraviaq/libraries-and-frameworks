@@ -22,6 +22,10 @@ const useFormUser = () => {
       ...prev,
       [name]: name !== "conditions" ? value : checked,
     }));
+    // setUser({
+    //   ...user,
+    //   [name]: name !== "conditions" ? value : checked,
+    // });
   };
 
   return { email, password, conditions, handleInputChange };
